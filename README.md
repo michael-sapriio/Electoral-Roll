@@ -1,6 +1,6 @@
 # Electoral-Roll
 
-Python: Extracting content from PDF file and dumping structured data to MS-Excel
+Python: Extracting content from PDF file to Microsoft Excel
 ---
 Following are the steps to run the code:
 
@@ -8,7 +8,7 @@ Following are the steps to run the code:
 
         pip install PyPDF2
         
-Or you can download the Package [Here](https://pypi.python.org/pypi/PyPDF2/). In Windows you can extract the `tar.gz` file then `cd` to the extracted directory and do:
+Or you can download the Package [Here](https://pypi.python.org/pypi/PyPDF2/). In Windows you can extract the `tar.gz` file and then `cd` to the extracted directory and do:
         
         python setup.py install
 
@@ -18,17 +18,21 @@ Or you can download the Package [Here](https://pypi.python.org/pypi/PyPDF2/). In
 
 For example:
 
+        ```python 
         directory = 'E:\Python\Github_Portfolio\source'
+        ```
 
 **4.** In line 15 and line 16 specify the start and end page numbers of the PDF files. The end page number could be made dynamic as desired. Here the `num_pg` variable is the total page number.
 
 For example:
-        
+
+        ```python
         start_pno = 2
               
         end_pno = num_pg-1
+        ```
 
 **5.** Run the code!
 
 
-There will be an output file (Excel file) named `output.xlsx` which has the electoral data
+There will be an output file named `output.xlsx` which has the electoral data
