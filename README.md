@@ -2,6 +2,8 @@
 
 Python: Extracting content from PDF file to Microsoft Excel
 ---
+We are assuming that you already have `numpy` and `pandas` installed
+
 Following are the steps to run the code:
 
 **1.** Install `PyPDF2`. Since `PyPDF2` is on the Python Package Index, you can use `pip` to install it as:
@@ -18,7 +20,7 @@ python setup.py install
 
 **2.** Open the file `extract_pdf.py`
 
-**3.** In line 7 specify the path of the folder/directory which has all the PDF Electoral roll data
+**3.** In **line 7** specify the path of the folder/directory which has all the PDF Electoral roll data
 
 For example:
 
@@ -26,7 +28,7 @@ For example:
 directory = 'E:\Python\Github_Portfolio\source'
 ```
 
-**4.** In line 15 and line 16 specify the start and end page numbers of the PDF files. The end page number could be made dynamic as desired. Here the `num_pg` variable is the total page number.
+**4.** In **line 15** and **line 16** specify the start and end page numbers of the PDF files. The end page number could be made dynamic as desired. Here the `num_pg` variable is the total page number.
 
 For example:
 
@@ -39,3 +41,19 @@ end_pno = num_pg-1
 
 
 There will be an output file named `output.xlsx` which has the electoral data
+
+Code customization
+---
+In line 57 we have put headers based on the attributes we want to extract from the PDF
+
+```python
+df = pd.DataFrame(row, columns = ['House No', 'Gender', 'Name', 'Age',
+                                  'Father\'s/Husband\'s Name'])
+```
+
+The `DateFrame` can be customized depending on the attributes you are interested in.
+
+Better Regex
+---
+
+The `regex` used in the code could be improved. I am still learning how to use them more efficiently and less messy like this one. Also, the `regex` code will vary as per the PDF content you are trying to extract. Here I am using whitespaces actively to breakdown parts in the text lines. If there are more efficient ways (I am sure there will be), kindly give me feedbacks. I will learn too.
