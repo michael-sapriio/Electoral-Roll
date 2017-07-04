@@ -6,11 +6,15 @@ Following are the steps to run the code:
 
 **1.** Install `PyPDF2`. Since `PyPDF2` is on the Python Package Index, you can use `pip` to install it as:
 
-```pip install PyPDF2```
+```     
+pip install PyPDF2
+```
         
 Or you can download the Package [Here](https://pypi.python.org/pypi/PyPDF2/). In Windows you can extract the `tar.gz` file and then `cd` to the extracted directory and do:
         
-```python setup.py install```
+```     
+python setup.py install
+```
 
 **2.** Open the file `extract_pdf.py`
 
