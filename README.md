@@ -18,19 +18,18 @@ Or you can download the Package [Here](https://pypi.python.org/pypi/PyPDF2/). In
 
 For example:
 
-        ```python 
-        directory = 'E:\Python\Github_Portfolio\source'
-        ```
+```python 
+directory = 'E:\Python\Github_Portfolio\source'
+```
 
 **4.** In line 15 and line 16 specify the start and end page numbers of the PDF files. The end page number could be made dynamic as desired. Here the `num_pg` variable is the total page number.
 
 For example:
 
-        ```python
-        start_pno = 2
-              
-        end_pno = num_pg-1
-        ```
+```python
+start_pno = 2       
+end_pno = num_pg-1
+```
 
 **5.** Run the code!
 
