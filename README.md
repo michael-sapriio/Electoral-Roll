@@ -2,9 +2,15 @@
 
 Python: Extracting content from PDF file and dumping structured data to MS-Excel
 ---
-Following are steps to run the code:
+Following are the steps to run the code:
 
-**1.** Install PyPDF2. You can pip install. You can download it [here](https://pypi.python.org/pypi/PyPDF2/)
+**1.** Install PyPDF2. Since PyPDF2 is on the Python Package Index, you can use `pip` to install it as:
+
+        pip install PyPDF2
+        
+Or you can download the Package [Here](https://pypi.python.org/pypi/PyPDF2/). In Windows you can extract the `tar.gz` file then `cd` to the extracted directory and do:
+        
+        python setup.py install
 
 **2.** Open the file 'extract_pdf.py'
 
@@ -14,7 +20,7 @@ For example:
 
         directory = 'E:\Python\Github_Portfolio\source'
 
-**4.** In line 15 and line 16 specify the start and end page numbers of the PDF files. The end page number could be made dynamic as desired. Here the 'num_pg' variable is the total page number.
+**4.** In line 15 and line 16 specify the start and end page numbers of the PDF files. The end page number could be made dynamic as desired. Here the `num_pg` variable is the total page number.
 
 For example:
         
