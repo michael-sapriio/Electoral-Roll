@@ -44,7 +44,7 @@ There will be an output file named `output.xlsx` which has the electoral data
 
 Code customization
 ---
-In line 57 we have put headers based on the attributes we want to extract from the PDF
+In **line 56** we have put headers based on the attributes we want.
 
 ```python
 df = pd.DataFrame(row, columns = ['House No', 'Gender', 'Name', 'Age',
@@ -56,4 +56,4 @@ The `DateFrame` can be customized depending on the attributes you are interested
 Better Regex
 ---
 
-The `regex` used in the code could be improved. I am still learning how to use them more efficiently and less messy like this one. Also, the `regex` code will vary as per the PDF content you are trying to extract. Here I am using whitespaces actively to breakdown parts in the text lines. If there are more efficient ways (I am sure there will be), kindly give me feedbacks. I will learn too.
+The `regex` used in the code could be improved. I am still learning how to use them more efficiently and less messy like this one. Also, the `regex` code will vary with the content you are trying to extract. Here I am using whitespaces actively to breakdown text lines into tokens. If there are more efficient ways (I am sure there will be), kindly give me feedbacks. I will learn too.
