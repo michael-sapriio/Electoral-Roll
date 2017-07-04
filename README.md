@@ -2,7 +2,7 @@
 
 Python: Extracting content from PDF file to Microsoft Excel
 ---
-We are assuming that you already have `numpy` and `pandas` installed
+I'm assuming you already have `numpy` and `pandas` installed
 
 Following are the steps to run the code:
 
@@ -56,4 +56,4 @@ The `DateFrame` can be customized depending on the attributes you are interested
 Better Regex
 ---
 
-The `regex` used in the code could be improved. I am still learning how to use them more efficiently and less messy like this one. Also, the `regex` code will vary with the content you are trying to extract. Here I am using whitespaces actively to breakdown text lines into tokens. If there are more efficient ways (I am sure there will be), kindly give me feedbacks. I will learn too.
+The `regex` used in the code could be improved. I am still learning how to use them more efficiently and less messy like this one. Also, the `regex` code will vary with the content you are trying to extract. Here I am using whitespaces actively to breakdown text lines into tokens. If there are more efficient ways (I am sure there will be), please give me feedback. I will learn too! :)
