@@ -2,6 +2,12 @@
 
 Python: Extracting content from PDF file to Microsoft Excel
 ---
+Description
+---
+This simple python code will iterate through a folder/directory containing electoral rolls (Voter Lists) in PDF format, extract contents from it, apply regular expressions and dump the clean text (Structured attributes) into Microsoft Excel. The code will create intermediate ```.txt``` files before applying the ```regex```, and delete them on completion. It will also create an ```.xlsx``` file as an output. Each row in the output file corresponds to the information (House Number, Name, Father's/Husband's name, Age) of a voter.
+
+Execution Steps
+---
 I'm assuming you already have `numpy` and `pandas` installed
 
 Following are the steps to run the code:
